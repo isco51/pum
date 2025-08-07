@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Playtime - Unlock the Secret Chapter FREE</title>
+    <meta name="description" content="Complete one quick offer to unlock a secret chapter and download the full Poppy Playtime game on iOS & Android instantly. Experience heart-pounding scares with Huggy Wuggy!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Preload Key Assets -->
+    <link rel="preload" href="https://assets.stickpng.com/images/6316f86a1c8781537bdc1219.png" as="image">
+    <link rel="preload" href="https://wallpaperaccess.com/full/7827277.jpg" as="image">
+
+    <style>
+        /* Custom Styles & Animations */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+        }
+
+        .factory-bg {
+            background-image: url('https://www.transparenttextures.com/patterns/dark-wall.png');
+            background-color: #111827;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .factory-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 1));
+        }
+        
+        .glitch-logo:hover::before,
+        .glitch-logo:hover::after {
+            content: '';
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://assets.stickpng.com/images/6316f86a1c8781537bdc1219.png') no-repeat center center / contain;
+            opacity: 0.8;
+        }
+        .glitch-logo:hover::before {
+            left: 2px; text-shadow: -2px 0 #ff00c1;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        .glitch-logo:hover::after {
+            left: -2px; text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+            clip: rect(85px, 450px, 90px, 0);
+            animation: glitch-anim-2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim { 0% { clip: rect(42px, 9999px, 44px, 0); } 5% { clip: rect(12px, 9999px, 62px, 0); } 10% { clip: rect(70px, 9999px, 72px, 0); } }
+        @keyframes glitch-anim-2 { 0% { clip: rect(20px, 9999px, 90px, 0); } 15% { clip: rect(30px, 9999px, 45px, 0); } }
+
+        .cta-pulse { animation: pulse-red 2s infinite; box-shadow: 0 0 0 0 rgba(239, 68, 68, 1); }
+        @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); } 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); } }
+
+        .slide-in-right { animation: slideInRight 1s ease-out forwards; opacity: 0; }
+        @keyframes slideInRight { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        
+        .sticky-header.scrolled { background-color: rgba(17, 24, 39, 0.8); backdrop-filter: blur(10px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+
+        .carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+        .carousel-slide { flex: 0 0 100%; }
+        .carousel-slide img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; }
+        .accordion-item.active .accordion-content { max-height: 200px; padding-top: 1rem; padding-bottom: 1rem; }
+        .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+        
+        /* New Modal Styles */
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-container {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transform: scale(0.95);
+            opacity: 0;
+        }
+        .modal-overlay:not(.hidden) .modal-container {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Sticky Header -->
+    <header id="main-header" class="sticky-header fixed top-0 left-0 right-0 z-40 p-4 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="https://assets.stickpng.com/images/6316f86a1c8781537bdc1219.png" alt="Poppy Playtime Logo" class="h-8 md:h-10 transition-all duration-300">
+            <button class="js-show-modal bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm md:text-base transition-colors">Download Now</button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="factory-bg min-h-screen flex items-center justify-center pt-20 pb-10 relative">
+        <div class="container mx-auto px-4 text-center relative z-10 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:text-left">
+                <img src="https://assets.stickpng.com/images/6316f86a1c8781537bdc1219.png" alt="Poppy Playtime Logo" class="glitch-logo mx-auto lg:mx-0 mb-8 w-64 md:w-80">
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">Unlock the <span class="text-red-500">Secret Chapter</span> of Poppy Playtime – FREE!</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8">Complete one quick offer, then grab the full game on iOS & Android instantly.</p>
+                <button class="js-show-modal cta-pulse inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105">
+                    Complete Offer & Download Now
+                </button>
+                <div id="countdown-timer" class="mt-6 text-white text-lg">
+                    Offer ends in: <span class="font-bold text-yellow-400">01:59:59</span>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-10 lg:mt-0">
+                <img src="https://wallpaperaccess.com/full/7827277.jpg" alt="Huggy Wuggy in a vent" class="slide-in-right w-full max-w-md mx-auto lg:max-w-none rounded-lg shadow-2xl border-2 border-red-800">
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections remain the same... -->
+    <!-- 2. Key Features -->
+    <section id="features" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-red-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Jump-Scare Moments</h3>
+                    <p class="text-gray-400">Heart-pounding encounters with Huggy Wuggy.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-red-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H5v-2H3v-2H1.258a1 1 0 01-.97-1.243l1.263-6.318a1 1 0 01.97-.757H7M15 7V5m0 2H9m6 0v2m0-2h2m-2 2h-2m2-2h-2" /></svg></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Exclusive Secret Chapter</h3>
+                    <p class="text-gray-400">Dive deeper into the abandoned toy factory.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-red-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Cross-Platform Play</h3>
+                    <p class="text-gray-400">Plays flawlessly on iPhone & Android.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. How It Works -->
+    <section id="how-it-works" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Get Playing in 3 Simple Steps</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <div class="bg-red-600 rounded-full h-20 w-20 flex items-center justify-center text-white text-3xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">Click Download</h3>
+                    <p class="text-gray-400">Click any "Download Now" button to open the final step.</p>
+                </div>
+                <div class="text-red-500 transform rotate-90 md:rotate-0 my-4 md:my-0 md:mx-8"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></div>
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <div class="bg-red-600 rounded-full h-20 w-20 flex items-center justify-center text-white text-3xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2">Complete Verification</h3>
+                    <p class="text-gray-400">Finish one quick, free offer to verify your download.</p>
+                </div>
+                <div class="text-red-500 transform rotate-90 md:rotate-0 my-4 md:my-0 md:mx-8"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></div>
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <div class="bg-red-600 rounded-full h-20 w-20 flex items-center justify-center text-white text-3xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2">Start Playing!</h3>
+                    <p class="text-gray-400">Your game starts automatically. Enjoy the scares!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Screenshots Carousel -->
+    <section id="screenshots" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Peek Inside the Factory...</h2>
+            <div class="relative max-w-3xl mx-auto">
+                <div class="carousel-container rounded-lg shadow-2xl border-2 border-gray-700 overflow-hidden">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img loading="lazy" src="https://wallpaperaccess.com/full/7993645.jpg" alt="Poppy Playtime characters" onerror="this.onerror=null;this.src='https://placehold.co/1200x675/1f2937/e5e7eb?text=Image+Not+Found';"></div>
+                        <div class="carousel-slide"><img loading="lazy" src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/ncom/software/switch/70010000080061/2ad60742b0fe5c6eda64c3f3402f800f575c144678339e496cb6b9cea8396b4b" alt="Poppy Playtime toy lineup" onerror="this.onerror=null;this.src='https://placehold.co/1200x675/1f2937/e5e7eb?text=Image+Not+Found';"></div>
+                        <div class="carousel-slide"><img loading="lazy" src="https://www.thexboxhub.com/wp-content/uploads/2025/07/Poppy-Playtime-Chapter-4-review-1-640x360.jpg" alt="Poppy Playtime Chapter 4 screenshot" onerror="this.onerror=null;this.src='https://placehold.co/1200x675/1f2937/e5e7eb?text=Image+Not+Found';"></div>
+                    </div>
+                </div>
+                <button id="prevBtn" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full ml-2 z-10">&lt;</button>
+                <button id="nextBtn" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full mr-2 z-10">&gt;</button>
+                <div id="carousel-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Download Section -->
+    <section id="download-section" class="py-20 bg-black text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Face Your Fears?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Click below to complete your offer and get the full game build for your device.</p>
+            <div class="flex justify-center items-center gap-4 flex-wrap mb-8">
+                <button class="js-show-modal transition-transform transform hover:scale-105">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" class="h-16">
+                </button>
+                <button class="js-show-modal transition-transform transform hover:scale-105">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Download_on_the_Google_Play_Badge.svg" alt="Get it on Google Play" class="h-16">
+                </button>
+            </div>
+            <p class="text-sm text-gray-500 mb-4">Compatible with iOS 13+ and Android 7.0+.</p>
+            <p class="text-xs text-gray-600 max-w-md mx-auto">We respect your privacy. No spam. Your download will begin immediately after completing one quick, free offer from our sponsors.</p>
+        </div>
+    </section>
+
+    <!-- 6. Social Proof & Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">What Players Are Saying</h2>
+            <div id="testimonial-container" class="relative max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg border border-gray-700 text-center min-h-[200px] flex items-center justify-center">
+                <p id="testimonial-text" class="text-xl italic text-gray-300 transition-opacity duration-500"></p>
+                <p id="testimonial-author" class="absolute bottom-4 right-8 text-red-500 font-bold"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ Accordion -->
+    <section id="faq" class="py-20 bg-black">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ Items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <img src="https://assets.stickpng.com/images/6316f86a1c8781537bdc1219.png" alt="Mini Logo" class="h-8 mx-auto mb-4">
+            <p class="text-sm">&copy; 2024 Poppy Playtime Secret Chapter. All Rights Reserved.</p>
+            <div class="flex justify-center gap-4 mt-4 text-xs">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="mt-4">
+                <p class="text-xs">Powered by <span class="font-bold">Your CPANetwork</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all z-30">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+    
+    <!-- NEW: Download Modal -->
+    <div id="download-modal" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4">
+        <div class="modal-container bg-gray-800 border-2 border-red-500 rounded-xl shadow-2xl p-8 max-w-md w-full text-center relative">
+            <!-- Close Button -->
+            <button id="close-modal" class="absolute top-3 right-3 text-gray-400 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            
+            <div class="text-yellow-400 mb-4">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">Final Step: Secure Your Download</h3>
+            <p class="text-gray-300 mb-6">To ensure a safe and bot-free download, please complete a quick verification. This unlocks the full Poppy Playtime game, including the secret chapter.</p>
+            
+            <a href="https://installchecker.com/cl/i/1o468e" target="_blank" class="cta-pulse w-full inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-xl transition-all transform hover:scale-105">
+                Verify & Download Now
+            </a>
+            <p class="text-xs text-gray-500 mt-4">You will be redirected to complete a secure offer.</p>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // --- Sticky Header ---
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            // --- Back to Top Button ---
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                backToTopButton.classList.toggle('hidden', window.pageYOffset <= 300);
+            });
+            backToTopButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+            // --- Screenshots Carousel ---
+            const track = document.querySelector('.carousel-track');
+            if (track) {
+                const slides = Array.from(track.children);
+                const nextButton = document.getElementById('nextBtn');
+                const prevButton = document.getElementById('prevBtn');
+                const dotsNav = document.getElementById('carousel-dots');
+                let slideWidth = slides.length > 0 ? slides[0].getBoundingClientRect().width : 0;
+                let currentIndex = 0;
+
+                const updateSlideWidth = () => {
+                    if (slides.length > 0) {
+                        slideWidth = slides[0].getBoundingClientRect().width;
+                        moveToSlide(track, currentIndex, false);
+                    }
+                }
+                window.addEventListener('resize', updateSlideWidth);
+
+                const moveToSlide = (currentTrack, targetIndex, transition = true) => {
+                    if (!transition) currentTrack.style.transition = 'none';
+                    currentTrack.style.transform = 'translateX(-' + slideWidth * targetIndex + 'px)';
+                    if (!transition) {
+                        currentTrack.offsetHeight; 
+                        currentTrack.style.transition = '';
+                    }
+                    currentIndex = targetIndex;
+                    updateDots(targetIndex);
+                }
+
+                if (slides.length > 0) {
+                    slides.forEach((_, index) => {
+                        const dot = document.createElement('button');
+                        dot.className = 'w-3 h-3 rounded-full bg-gray-500 transition-colors';
+                        if (index === 0) dot.classList.add('bg-red-500');
+                        dot.addEventListener('click', () => moveToSlide(track, index));
+                        dotsNav.appendChild(dot);
+                    });
+                }
+
+                const dots = Array.from(dotsNav.children);
+                const updateDots = (targetIndex) => {
+                    dots.forEach((dot, index) => {
+                        dot.classList.toggle('bg-red-500', index === targetIndex);
+                        dot.classList.toggle('bg-gray-500', index !== targetIndex);
+                    });
+                }
+
+                nextButton.addEventListener('click', () => {
+                    if (slides.length === 0) return;
+                    moveToSlide(track, (currentIndex + 1) % slides.length);
+                });
+
+                prevButton.addEventListener('click', () => {
+                    if (slides.length === 0) return;
+                    moveToSlide(track, (currentIndex - 1 + slides.length) % slides.length);
+                });
+            }
+
+            // --- Testimonials Rotator ---
+            const testimonials = [
+                { quote: "The jump scares got me so bad—worth every second!", author: "@ScareFan99" },
+                { quote: "Downloaded for free in under 60 seconds. Amazing!", author: "@MobileGamerPro" },
+                { quote: "Best mobile horror experience I’ve ever played. Seriously spooky.", author: "@HorrorQueen" }
+            ];
+            const testimonialText = document.getElementById('testimonial-text');
+            const testimonialAuthor = document.getElementById('testimonial-author');
+            let currentTestimonial = 0;
+
+            function showTestimonial() {
+                testimonialText.style.opacity = 0;
+                testimonialAuthor.style.opacity = 0;
+                setTimeout(() => {
+                    testimonialText.textContent = `“${testimonials[currentTestimonial].quote}”`;
+                    testimonialAuthor.textContent = testimonials[currentTestimonial].author;
+                    testimonialText.style.opacity = 1;
+                    testimonialAuthor.style.opacity = 1;
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                }, 500);
+            }
+            if (testimonialText) {
+                showTestimonial();
+                setInterval(showTestimonial, 5000);
+            }
+            
+            // --- FAQ Accordion ---
+            const faqContainer = document.getElementById('faq-accordion');
+            const faqData = [
+                { q: "Is this really free?", a: "Yes! The game is 100% free to download and play after you complete one short, free offer from our list of sponsors. This helps us cover development costs for the secret chapter." },
+                { q: "Will it work on my phone?", a: "Our build supports most modern devices. You'll need iOS 13 or newer for Apple devices, and Android 7.0 or newer for Android devices." },
+                { q: "How long is the secret chapter?", a: "The exclusive secret chapter provides approximately 30-45 minutes of brand new puzzles, lore, and of course, terrifying scares." }
+            ];
+            
+            if (faqContainer) {
+                faqData.forEach(item => {
+                    const faqItem = document.createElement('div');
+                    faqItem.className = 'accordion-item bg-gray-800 rounded-lg border border-gray-700';
+                    faqItem.innerHTML = `
+                        <button class="accordion-header w-full text-left p-6 flex justify-between items-center">
+                            <span class="text-lg font-semibold text-white">${item.q}</span>
+                            <span class="accordion-icon text-red-500 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </span>
+                        </button>
+                        <div class="accordion-content px-6 text-gray-400">
+                            ${item.a}
+                        </div>
+                    `;
+                    faqContainer.appendChild(faqItem);
+                });
+
+                const accordionItems = faqContainer.querySelectorAll('.accordion-item');
+                accordionItems.forEach(item => {
+                    item.querySelector('.accordion-header').addEventListener('click', () => {
+                        accordionItems.forEach(other => {
+                            if (other !== item) other.classList.remove('active');
+                        });
+                        item.classList.toggle('active');
+                    });
+                });
+            }
+            
+            // --- Countdown Timer ---
+            const countdownEl = document.querySelector('#countdown-timer span');
+            if(countdownEl) {
+                let time = 1 * 3600 + 59 * 60 + 59;
+                const updateCountdown = () => {
+                    if (time <= 0) {
+                        countdownEl.innerHTML = "Offer Expired!";
+                        clearInterval(countdownInterval);
+                        return;
+                    }
+                    const hours = Math.floor(time / 3600).toString().padStart(2, '0');
+                    const minutes = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
+                    const seconds = (time % 60).toString().padStart(2, '0');
+                    countdownEl.innerHTML = `${hours}:${minutes}:${seconds}`;
+                    time--;
+                };
+                const countdownInterval = setInterval(updateCountdown, 1000);
+            }
+
+            // --- NEW: Download Modal Logic ---
+            const modal = document.getElementById('download-modal');
+            const showModalButtons = document.querySelectorAll('.js-show-modal');
+            const closeModalButton = document.getElementById('close-modal');
+
+            const showModal = () => modal.classList.remove('hidden');
+            const hideModal = () => modal.classList.add('hidden');
+
+            showModalButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showModal();
+                });
+            });
+
+            closeModalButton.addEventListener('click', hideModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    hideModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
